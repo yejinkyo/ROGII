@@ -1,0 +1,13 @@
+model: catboost
+n_splits: 5
+num_boost_round: 10000
+early_stopping_rounds: 500
+
+params:
+  loss_function: "RMSE"
+  learning_rate: 0.01
+  depth: 6
+  l2_leaf_reg: 5.0
+  random_seed: 42
+  task_type: CPU
+  verbose: 0

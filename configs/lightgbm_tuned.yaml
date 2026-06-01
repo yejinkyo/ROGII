@@ -1,0 +1,16 @@
+model: lightgbm
+n_splits: 5
+num_boost_round: 20000
+early_stopping_rounds: 500
+params:
+  objective: regression
+  metric: rmse
+  verbose: -1
+  learning_rate: 0.01
+  num_leaves: 114
+  min_child_samples: 84
+  feature_fraction: 0.6050808182868695
+  bagging_fraction: 0.7310979305952124
+  bagging_freq: 1
+  reg_alpha: 0.08298897374823858
+  reg_lambda: 0.3908031832280148

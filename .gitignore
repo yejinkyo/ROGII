@@ -1,0 +1,78 @@
+# 환경 & 패키징
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+
+# Jupyter & IPython
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.jupyter/
+*.ipynb_checkpoints
+
+# IDE & 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# Claude 로컬 개발 환경
+.claude/
+CLAUDE.md
+
+# ML 모델 & 대용량 데이터 (절대 커밋 금지)
+rogii-wellbore-geology-prediction/
+data/raw/
+data/processed/
+*.parquet
+catboost_info/
+.catboost_info/
+src/
+ROADMAP.md
+notebooks/_archive/
+img/
+
+# 캐글 제출 파일 (버전은 git tag로 관리)
+submissions/*.csv
+!submissions/.gitkeep
+submissions/
+
+# 실험 메타데이터 (결과 summary만 추적)
+experiments/*/
+!experiments/all_results.csv
+!experiments/.gitkeep
+
+# 기타 임시/로그 파일
+*.log
+*.tmp
+*.pkl
+*.pickle
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# OS 임시 파일
+.~*
+*~
+.*.swp

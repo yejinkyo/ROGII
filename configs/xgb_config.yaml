@@ -1,0 +1,23 @@
+model: xgboost
+n_splits: 5
+num_boost_round: 20000
+early_stopping_rounds: 500
+
+# MD: 단조 증가(+1), Z: 단조 감소(-1), 나머지: 0
+# train.py에서 feature_cols 순서에 맞춰 딕셔너리로 처리
+monotone_cols:
+  MD: 1
+  Z: -1
+
+params:
+  objective: reg:squarederror
+  eval_metric: rmse
+  learning_rate: 0.01
+  max_depth: 6
+  subsample: 0.7
+  colsample_bytree: 0.7
+  reg_alpha: 1.0
+  reg_lambda: 5.0
+  tree_method: hist
+  verbosity: 0
+  seed: 42

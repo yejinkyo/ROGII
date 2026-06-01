@@ -1,0 +1,17 @@
+model: catboost
+n_splits: 5
+num_boost_round: 10000
+early_stopping_rounds: 500
+params:
+  loss_function: RMSE
+  verbose: 0
+  random_seed: 42
+  task_type: CPU
+  learning_rate: 0.05666848699465485
+  depth: 6
+  l2_leaf_reg: 2.022784901536388
+  bagging_temperature: 0.009450374267320597
+  boosting_type: Plain
+  subsample: 0.8
+  border_count: 64
+  rsm: 0.8

@@ -1,0 +1,19 @@
+model: xgboost
+n_splits: 5
+num_boost_round: 20000
+early_stopping_rounds: 500
+params:
+  objective: reg:squarederror
+  eval_metric: rmse
+  verbosity: 0
+  learning_rate: 0.01
+  tree_method: hist
+  max_depth: 5
+  min_child_weight: 11
+  subsample: 0.9462001782684004
+  colsample_bytree: 0.5392266220266388
+  reg_alpha: 0.17194637399771953
+  reg_lambda: 0.24905133468171797
+monotone_cols:
+  MD: 1
+  Z: -1
