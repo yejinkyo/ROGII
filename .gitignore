@@ -76,3 +76,7 @@ build/
 .~*
 *~
 .*.swp
+
+# 실험 결과 저장
+WORKFLOW_GUIDE.md
+workflow.sh
