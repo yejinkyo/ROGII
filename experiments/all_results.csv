@@ -1,1 +1,3 @@
-date,branch,experiment,model,rmse,mae,cv_folds,features_count,notes,commit_hash
+date,branch,model,val_rmse,LB,cv_folds,features_count,notes
+260603,model/lstm,lstm,10.189,8.985,X,7,
+260603,model/lstm,lstm,9.953,8.977,X,15,kaggleV3
