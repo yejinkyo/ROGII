@@ -38,7 +38,7 @@ Thumbs.db
 .claude/
 CLAUDE.md
 
-# ML 모델 & 대용량 데이터 (절대 커밋 금지)
+# ML 모델 & 대용량 데이터 & 참고자료
 rogii-wellbore-geology-prediction/
 data/raw/
 data/processed/
@@ -49,13 +49,14 @@ src/
 ROADMAP.md
 notebooks/_archive/
 img/
+ref/
 
 # 캐글 제출 파일 (버전은 git tag로 관리)
 submissions/*.csv
 !submissions/.gitkeep
 submissions/
 
-# 실험 메타데이터 (결과 summary만 추적)
+# 실험 메타데이터 
 experiments/*/
 !experiments/all_results.csv
 !experiments/.gitkeep
